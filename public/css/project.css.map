@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,UAAU,EAAE,mBAAmB",
+"sources": ["../../resources/scss/_common.scss"],
+"names": [],
+"file": "project.css"
+}
