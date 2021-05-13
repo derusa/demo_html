@@ -1,0 +1,12 @@
+.page-1 {
+  .block-3 {
+    .post {
+      &:nth-child(1) {
+        margin-top: 40px;
+      }
+    }
+  }
+  .aside-image {
+    margin-top: 50px;
+  }
+}

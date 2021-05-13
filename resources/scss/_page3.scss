@@ -1,0 +1,64 @@
+.page-3 {
+  .block-contact {
+    background-color: #fff;
+    h2 {
+      text-align: center;
+      padding: 35px 0 30px 0;
+      margin: 0;
+      font-weight: 500;
+      font-size: 24px;
+      color: #383838;
+    }
+    iframe {
+      margin-bottom: 59px;
+      width: 100%;
+      height: 676px;
+    }
+    .contact {
+      display: flex;
+      align-items: center;
+      margin-bottom: 26px;
+      flex-wrap: wrap;
+      p {
+        max-width: 280px;
+        margin: 0;
+      }
+    }
+    .wrap-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 51px;
+      height: 51px;
+      background: #F4CA6D;
+      border-radius: 15px;
+      margin-right: 26px;
+    }
+    .form {
+      div {
+        padding: 0 10px;
+      }
+      input {
+        height: 50px;
+        border: 1px solid #CCCCCC;
+        border-radius: 16px;
+        margin-bottom: 18px;
+      }
+      textarea {
+        height: calc(100% - 18px);
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 16px;
+        min-height: 15px;
+      }
+      .btn {
+        float: right;
+        width: 180px;
+        height: 50px;
+        background: #F4CA6D;
+        border-radius: 16px;
+        margin-bottom: 116px;
+      }
+    }
+  }
+}
