@@ -182,18 +182,26 @@
   }
 }
 
-@media (max-width: 500px) {
-    h2 {
-      &.center {
-        &:before {
-          width: 80% !important;
-        }
-      }
-      &.right {
-        font-size: 30px !important;
-        &:before {
-          width: 50px !important;
-        }
+@media (max-width: 550px) {
+  .header-2 {
+    .wrap-menu {
+      width: 70px;
+    }
+  }
+  .page-8 {
+    margin-top: 0;
+  }
+  h2 {
+    &.center {
+      &:before {
+        width: 80% !important;
       }
     }
+    &.right {
+      font-size: 30px !important;
+      &:before {
+        width: 50px !important;
+      }
+    }
+  }
 }

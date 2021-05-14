@@ -7,11 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="vendor/slick-1.8.1/slick.css">
     <link rel="stylesheet" href="public/css/project.css">
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/umd/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/slick-1.8.1/slick.min.js"></script>
 
 </head>
 <body>
@@ -39,7 +41,25 @@
 
     <div class="menu-bar">
         <div class="container">
-
+            <div class="row">
+                <div class="col-2 centered-vertical">
+                    <div class="btn-menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="col-8 centered">
+                    <ul class="ul-menu">
+                        <li class="item-menu"><a href="#">Menu 1</a></li>
+                        <li class="item-menu"><a href="#">Menu 2</a></li>
+                        <li class="item-menu"><a href="#">Menu 3</a></li>
+                        <li class="item-menu"><a href="#">Menu 4</a></li>
+                        <li class="item-menu"><a href="#">Menu 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 centered-vertical"><img src="public/images/icon/search.svg"></div>
+            </div>
         </div>
     </div>
 
@@ -55,9 +75,10 @@
                 </div>
             </div>
             <div class="content">
+                <div class="main-img" style="background-image: url('public/images/example_1.png')"></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5 offset-7">
+                        <div class="col-md-5 offset-md-7">
                             <h2>Lorem ipsum dolor sit amet</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus aliquet congue. Nulla lectus metus, volutpat ut ligula imperdiet, faucibus semper lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac felis gravida tellus ultrices accumsan. Quisque fermentum leo libero
@@ -78,7 +99,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-img" style="background-image: url('public/images/example_1.png')"></div>
             </div>
         </section>
         <section class="block block-2">
@@ -114,7 +134,7 @@
                     </div>
                 </div>
                 <div class="position-relative">
-                    <div class="slider">
+                    <div id="slider-1" class="slider">
                         <div class="card">
                             <img class="card-img-top" src="public/images/example_3.png" alt="image" style="width:100%">
                             <div class="card-body">
@@ -160,6 +180,15 @@
                                     <span>Phan Tuấn</span>
                                     <img src="public/images/icon/comment.svg">
                                     1000 bình luận
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="public/images/example_3.png" alt="image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Class aptent taciti soci</h4>
+                                <p class="card-text text-justify">Etiam sit amet nisi sem. Nullam ac lorem in orci pulvinar convallis. Vestibulum efficitur bibendum ante</p>
+                                <div class="more-info">Đăng bởi<span>Phan Tuấn</span><img src="public/images/icon/comment.svg">1000 bình luận
                                 </div>
                             </div>
                         </div>
@@ -624,7 +653,7 @@
                 <div class="col-sm-6 col-lg-2">
                     <img class="logo" src="public/images/logo_footer.png">
                 </div>
-                <div class="col-sm-6 col-lg-4 p-0">
+                <div class="col-sm-6 col-lg-4 pr-0">
                     <div class="contact">
                         <div class="wrap-icon">
                             <img src="public/images/icon/contact_address.svg">
@@ -670,4 +699,38 @@
     </div>
 
 </body>
+<script>
+  $(window).on('load', () => {
+    $('#slider-1').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      nextArrow: $('.right'),
+      prevArrow: $('.left'),
+      autoplay: true,
+      autoplaySpeed: 5000,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+  });
+</script>
 </html>
