@@ -1,6 +1,10 @@
 .header-2 {
   background: #1B1B1B;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   .main-logo {
     width: 180px;
   }

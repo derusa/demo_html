@@ -24,6 +24,11 @@
     .card {
       border: 1px solid #CCCCCC;
       border-radius: 10px;
+      transition: 0.3s;
+      &:hover {
+        border: 1px solid #F4CA6D;
+        box-shadow: 0 0 0 1px #F4CA6D;
+      }
       .wrap-logo {
         display: flex;
         min-height: 103px;

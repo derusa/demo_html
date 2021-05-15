@@ -106,6 +106,9 @@
         line-height: 19px;
         text-transform: uppercase;
         color: #383838;
+        &:hover {
+          color: #F4CA6D;
+        }
       }
     }
     .slider {
@@ -117,6 +120,11 @@
         width: 280px;
         border-radius: 10px 10px 0px 0px;
         margin: 0 10px;
+        .card-title {
+          &:hover {
+            color: #F4CA6D;
+          }
+        }
         h4 {
           font-weight: bold;
           font-size: 18px;
@@ -295,7 +303,7 @@
       bottom: 10px;
     }
     .p-main {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
   .block-5 {
@@ -310,6 +318,9 @@
       &:before {
         background: #fff;
       }
+    }
+    .p-main:hover {
+      color: #fff;
     }
     .img-item {
       height: 388px;
@@ -331,6 +342,9 @@
       margin-bottom: 20px;
       .label-style-1 {
         background: #fff;
+      }
+      p:hover {
+        color: #fff;
       }
       img {
         width: 180px;
@@ -375,7 +389,7 @@
       margin: 50px 0 15px 0;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 769px) {
     .block-1 {
       .content {
         .col-md-5 {

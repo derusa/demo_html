@@ -22,24 +22,45 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 item-social">
-                    <img src="public/images/icon/facebook.svg">
-                    <img src="public/images/icon/youtube.svg">
-                    <img src="public/images/icon/twitter.svg">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="public/images/icon/facebook.svg">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="public/images/icon/youtube.svg">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="public/images/icon/twitter.svg">
+                    </a>
                 </div>
                 <div class="col-sm-4 item-logo">
                     <img src="public/images/logo.png">
                 </div>
                 <div class="col-sm-4 item-contact">
-                    <div class="btn-receive">
+                    <div class="btn-receive" data-toggle="modal" data-target="#register">
                         <img src="public/images/icon/email.svg">
-                        <a href="#">Đăng ký nhận tin</a>
+                        <span>Đăng ký nhận tin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" data-backdrop="static" data-keyboard="false" id="register">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <img class="icon" src="public/images/icon/mail_modal.svg">
+                        <p>Đăng ký nhận tin</p>
+                        <div class="form-email">
+                            <input type="text" placeholder="Địa chỉ email">
+                            <img src="public/images/icon/send.svg">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="menu-bar">
+    <div id="menu-bar" class="menu-bar">
         <div class="container">
             <div class="row">
                 <div class="col-2 centered-vertical">
@@ -58,7 +79,36 @@
                         <li class="item-menu"><a href="#">Menu 5</a></li>
                     </ul>
                 </div>
-                <div class="col-2 centered-vertical"><img src="public/images/icon/search.svg"></div>
+                <div class="col-2 wrap-search">
+                    <input type="text" class="form-control">
+                    <img src="public/images/icon/search.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-sidebar">
+        <div class="wrap-content">
+            <ul class="ul-menu">
+                <li class="item-menu"><a href="#">Menu 1</a></li>
+                <li class="item-menu"><a href="#">Menu 2</a></li>
+                <li class="item-menu"><a href="#">Menu 3</a></li>
+                <li class="item-menu"><a href="#">Menu 4</a></li>
+                <li class="item-menu"><a href="#">Menu 5</a></li>
+            </ul>
+            <div class="item-social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="public/images/icon/facebook.svg">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="public/images/icon/youtube.svg">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="public/images/icon/twitter.svg">
+                </a>
+            </div>
+            <div class="banner-3">
+                <p>BANNER</p>
+                <a href="#" class="centered">Xem thêm</a>
             </div>
         </div>
     </div>
@@ -699,6 +749,7 @@
     </div>
 
 </body>
+<script src="public/js/common.js"></script>
 <script>
   $(window).on('load', () => {
     $('#slider-1').slick({
