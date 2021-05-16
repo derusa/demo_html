@@ -651,48 +651,63 @@
                     <h3 class="h-decor">Sản phẩm</h3>
                     <a href="#" class="see-all">Xem tất cả >>></a>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-xl-3 wrap-product">
-                        <div class="card">
-                            <img class="card-img-top" src="public/images/example_10.png" alt="image">
-                            <div class="card-body">
-                                <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
-                                <p class="new-price">4.999.000đ</p>
-                                <p class="old-price">5.999.000đ</p>
+                <div class="position-relative">
+                    <div id="slider-2" class="row">
+                        <div class="col-md-6 col-xl-3 wrap-product">
+                            <div class="card">
+                                <img class="card-img-top" src="public/images/example_10.png" alt="image">
+                                <div class="card-body">
+                                    <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
+                                    <p class="new-price">4.999.000đ</p>
+                                    <p class="old-price">5.999.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 wrap-product">
+                            <div class="card">
+                                <img class="card-img-top" src="public/images/example_10.png" alt="image">
+                                <div class="card-body">
+                                    <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
+                                    <p class="new-price">4.999.000đ</p>
+                                    <p class="old-price">5.999.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 wrap-product">
+                            <div class="card">
+                                <img class="card-img-top" src="public/images/example_10.png" alt="image">
+                                <div class="card-body">
+                                    <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
+                                    <p class="new-price">4.999.000đ</p>
+                                    <p class="old-price">5.999.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 wrap-product">
+                            <div class="card">
+                                <img class="card-img-top" src="public/images/example_10.png" alt="image">
+                                <div class="card-body">
+                                    <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
+                                    <p class="new-price">4.999.000đ</p>
+                                    <p class="old-price">5.999.000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 wrap-product">
+                            <div class="card">
+                                <img class="card-img-top" src="public/images/example_10.png" alt="image">
+                                <div class="card-body">
+                                    <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
+                                    <p class="new-price">4.999.000đ</p>
+                                    <p class="old-price">5.999.000đ</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-3 wrap-product">
-                        <div class="card">
-                            <img class="card-img-top" src="public/images/example_10.png" alt="image">
-                            <div class="card-body">
-                                <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
-                                <p class="new-price">4.999.000đ</p>
-                                <p class="old-price">5.999.000đ</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 wrap-product">
-                        <div class="card">
-                            <img class="card-img-top" src="public/images/example_10.png" alt="image">
-                            <div class="card-body">
-                                <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
-                                <p class="new-price">4.999.000đ</p>
-                                <p class="old-price">5.999.000đ</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 wrap-product">
-                        <div class="card">
-                            <img class="card-img-top" src="public/images/example_10.png" alt="image">
-                            <div class="card-body">
-                                <p class="card-text prod-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
-                                <p class="new-price">4.999.000đ</p>
-                                <p class="old-price">5.999.000đ</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="direction left-2"><i class="fas fa-2x fa-chevron-left"></i></div>
+                    <div class="direction right-2"><i class="fas fa-2x fa-chevron-right"></i></div>
                 </div>
+
             </div>
         </section>
     </div>
@@ -759,6 +774,36 @@
       dots: false,
       nextArrow: $('.right'),
       prevArrow: $('.left'),
+      autoplay: true,
+      autoplaySpeed: 5000,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+    $('#slider-2').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      nextArrow: $('.right-2'),
+      prevArrow: $('.left-2'),
       autoplay: true,
       autoplaySpeed: 5000,
       responsive: [
