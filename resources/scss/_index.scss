@@ -73,7 +73,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 57%;
+        width: 55%;
         height: 100%;
         top: 0;
         left: 0;
@@ -438,6 +438,15 @@
     .block-3 {
       .post {
         flex-wrap: wrap;
+      }
+    }
+  }
+  @media (min-width: 2500px) {
+    .block-1 {
+      .content {
+        .main-img {
+          width: 52%;
+        }
       }
     }
   }
